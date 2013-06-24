@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RootLayout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+>
+	<TextView
+		android:layout_width="fill_parent"
+		android:id="@+id/CurrentPath"
+		android:text="/"
+		android:background="#ff565656"
+		android:maxLines="1"
+		android:ellipsize="start"
+		android:gravity="center_vertical"
+		android:textColor="#ffffffff"
+		android:paddingBottom="1dip"
+		android:paddingTop="1dip"
+		android:singleLine="true"
+		android:paddingRight="5dip"
+		android:paddingLeft="5dip"
+		android:layout_height="wrap_content"
+	/>
+	<FrameLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+	>
+		<GridView
+			android:id="@+id/FileGridList"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:numColumns="auto_fit"
+			android:columnWidth="64dp"
+			android:stretchMode="columnWidth"
+			android:gravity="center"
+			android:horizontalSpacing="10dp"
+			android:verticalSpacing="10dp"
+			android:scrollbarStyle="insideInset"
+		/>
+	</FrameLayout>
+	<LinearLayout
+		android:id="@+id/StatusLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom"
+		android:gravity="right"
+		android:background="#ff565656"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:id="@+id/StatusFileCount"
+			android:text="280 file Selected"
+			android:background="#00000000"
+			android:maxLines="1"
+			android:gravity="center_vertical"
+			android:textColor="#ffffffff"
+			android:paddingBottom="1dip"
+			android:paddingTop="1dip"
+			android:singleLine="true"
+			android:paddingRight="5dip"
+			android:paddingLeft="5dip"
+			android:layout_height="wrap_content"
+		/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:id="@+id/StatusFileSize"
+			android:text="Total 3.12MB"
+			android:background="#00000000"
+			android:maxLines="1"
+			android:gravity="center_vertical"
+			android:textColor="#ffffffff"
+			android:paddingBottom="1dip"
+			android:paddingTop="1dip"
+			android:singleLine="true"
+			android:paddingRight="5dip"
+			android:paddingLeft="5dip"
+			android:layout_height="wrap_content"
+		/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppLauncher</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    <!--  DeviceListActivity -->
+    <string name="scanning">디바이스 스캔중...</string>
+    <string name="select_device">연결할 장치 선택</string>
+    <string name="none_paired">페이링된 장치가 없음</string>
+    <string name="none_found">디바이스를가 없음</string>
+    <string name="title_paired_devices">페어링된 디바이스</string>
+    <string name="title_other_devices">다른 사용가는 디바이스</string>
+    <string name="button_scan">디바이스 스캔</string>
+    
+</resources>
